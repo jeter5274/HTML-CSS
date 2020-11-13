@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            .btn{
+                width: 100px;
+                border-radius: 5px;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+
+            .btn_gray{
+                border: 1px solid #a6a6a6;
+                background-color: #bfbfbf;
+            }
+            .btn_gray:hover{
+                border: 1px solid #404040;
+                background-color: #808080;
+            }
+            
+            .btn_pink{
+                border: 1px solid #f47378;
+                background-color: #f8a1a4;
+            }
+            .btn_pink:hover{
+                border: 1px solid #77070b;
+                background-color: #b21016;
+            }
+            
+            .btn_sky{
+                border: 1px solid skyblue;
+                background-color: #96d1e9;
+            }
+            .btn_sky:hover{
+                border: 1px solid blue;
+                background-color: #3030ee;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+
+        <div class="btn btn_gray">저장버튼</div>
+        <div class="btn btn_pink">삭제버튼</div>
+        <div class="btn btn_sky">수정버튼</div>
+
+    </body>
+
+</html>

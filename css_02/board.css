@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+body{
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+#board-box{
+    width: 700px;
+    /*border: 1px solid #000000;*/
+}
+/*클래스를 만들어서 공통점을 만들어 줌
+div>label:first-child, span{ 
+    display: inline-block;
+    width: 80px;
+    margin: 0px 0px 10px 0px;
+}
+*/
+
+/*나는 .form_txt / textarea 등에 각각 넣어줌*/
+.form_group{margin: 10px 0px 10px 10px;}
+
+.form_group>.form_txt{ 
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+.form_group #board-select {width : 200px}
+
+/*궁금 - 픽셀이 고정이므로 그냥함*/
+.form_group #board-title{width : 600px}
+
+.form_group #board-pwd {width : 196px}
+
+/*나는 이걸 안했었어*/
+.form_group input[type="radio"], .form_group input[type="checkbox"]{
+    margin: 0px 10px 0px 0px;
+}
+
+/*나는 ID를 안줬엉
+textarea{
+    width : 683px;
+    height: 300px;
+    margin: 0px 0px 10px 0px;
+}
+*/
+.form_group #txt_content{
+    width : 685px;
+    height: 300px;
+}
+
+
+#btn_area{ /*text-align이 먹힌단다...하하..*/
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+#btn_area>button{
+    width: 60px;
+    height: 30px;
+}

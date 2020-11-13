@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+            padding: 0px;
+            margin: 0px;
+            }   
+            
+            #box-red{
+                background-color: #ff0000;
+            }
+
+            #box-blue{
+                width: 200px;
+                height: 200px;
+                background-color: #0000ff;
+                float: left;
+            }
+
+            #box-green{
+                width: 200px;
+                height: 200px;
+                background-color: #00ff00;
+                float: left;
+            }
+
+            #box-yellow{
+                width: 100px;
+                height: 100px;
+                background-color: #ffff00;
+                margin: 0 auto;
+            }
+
+            #box-yellow li{
+                float: left;
+                list-style-type: none;
+            }
+           
+
+            #box-pink{
+                background-color: #ff00ff;
+            }
+
+            /* clearfix */
+            .clearfix{*zoom:1;}
+            .clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+            .clearfix:after {clear: both;}
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="box-red" class="clearfix">
+            <div id="box-blue">
+                box-blue
+            </div>
+
+            <div id="box-green">
+                <div id="box-yellow">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="box-pink">
+            box-pink
+        </div>
+        
+
+    </body>
+
+</html>

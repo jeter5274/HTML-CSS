@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* ********** 공통 ********** */
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "맑은 고딕", 돋움, 굴림;
+    font-size: 12px;
+}
+
+a:link{text-decoration: none; color : #000;}
+a:visited{text-decoration: none; color : #000;}
+a:active{text-decoration: none; color : #000;}
+a:hover{text-decoration: none; color : #000;}
+
+ul, ol{
+    list-style-type : none;
+}
+
+/* clearfix ; float 사용시에 부모에 사용 */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+/* 레이아웃 */
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#nav{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#contents{
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+
+}
+
+#footer{
+    background-color: #e7eaed;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+/* header */
+#header>h1{
+    font-size: 35px;
+    color : #79b30b;
+    float: left;
+    margin: 15px 0px 15px 0px;
+}
+
+#header>#header-btnbox{
+    float: right;
+    margin: 30px 0px 0px 0px;
+}
+
+#header>#header-btnbox a{
+    font-size: 15px;
+    margin: 0px 0px 0px 20px;
+}
+
+/* navi */
+
+#nav ul{
+    width: 800px;
+    margin: 0 auto;
+}
+#nav ul>li{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+/* contents */
+
+#contents>#profile{
+    width: 300px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+
+}
+
+#contents>#greeting-box{
+    float: left;
+    background-color: #a3d4d4;
+}
+
+#contents>#greeting-box #greeting{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contents>#greeting-box p{
+    margin: 0px 0px 10px 0px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <meta charset="UTF-9">
+    <head>
+        <title>첫번째 웹페이지</title>
+        <link rel="stylesheet" href="./board.css">
+    </head>
+
+    <body>
+        <!--글쓰기폼 div-->
+        <div id="board-box">
+            <form action="" method="">
+                <!--게시판 선택-->
+                <div class="form_group">
+                    <label for="board-select" class="form_txt">게시판 선택</label>
+                    <select id="board-select">
+                        <option selected="selected"> 선택해주세요</option>
+                        <option>공지사항</option>
+                        <option>가입인사</option>
+                        <option>유머게시판</option>
+                        <option>취업게시판</option>
+                        <option>기타게시판</option>
+
+                    </select>
+                </div>
+                <!--게시판 끝-->
+
+                <!--제목 입력-->
+                <div class="form_group">
+                    <label for="board-title" class="form_txt">제목</label>
+                    <input type="text" id="board-title" placeholder="제목을 입력해 주세요">
+                </div>
+                <!--제목 입력 끝-->
+
+                <!--비밀번호 입력-->
+                <div class="form_group">
+                    <label for="board-pwd" class="form_txt">비밀번호</label>
+                    <input type="password" id="board-pwd" placeholder="패스워드를 입력하세요">
+                </div>
+                <!--비밀번호 입력 끝-->
+                    
+                <!--공개범위 선택-->
+                <div class="form_group">
+                    <span class="form_txt">공개범위</span>
+                    <label for="rd_myself">본인 </label><input type="radio" name="opne-range" id="rd_myself">
+                    <label for="rd_login_member">로그인회원 </label><input type="radio" name="opne-range" id="rd_login_member">
+                    <label for="rd_friend">친구 </label><input type="radio" name="opne-range" id="rd_friend">
+                    <label for="rd_all">전체 </label><input type="radio" name="opne-range" id="rd_all" checked="checked">
+                </div>
+                <!--공개범위 선택 끝-->
+
+                <!--허용범위 선택-->
+                <div class="form_group">
+                    <span class="form_txt">허용범위</span>
+                    <label for="chk_comment">댓글허용 </label><input type="checkbox" id="chk_comment" checked="checked">
+                    <label for="chk_reply">답글허용 </label><input type="checkbox" id="chk_reply">
+                    <label for="chk_like">좋아요허용 </label><input type="checkbox" id="chk_like">
+                </div>
+                <!--허용범위 선택 끝-->
+
+                <!--글상자 영역-->
+                <div class="form_group">
+                    <textarea id="txt_content"></textarea>
+                </div>
+                <!--글상자 영역-->
+
+
+                <!--파일 첨부-->
+                <div class="form_group">
+                    <label for="board-file" class="form_txt">첨부파일</label><input type="file" id="board-file">
+                </div>
+                <!--파일 첨부 끝-->
+                
+                <!--버튼 영역-->
+                <div id="btn_area">
+                    <button type="submit">등 록</button>
+                    <button type="reset">초기화</button>
+                </div>
+                <!--버튼 영역 끝-->
+            </form>
+        </div>
+        <!--글쓰기폼 div 끝-->
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <link rel="stylesheet" href="./ex16_Answer.css">
+
+    </head>
+
+    <body>
+
+        <!--회원가입폼 왹곽 선-->
+        <div id="join-box">
+            <form action="" method="get">
+                <!-- 아이디 -->
+                <div class="form-group">
+                    <label class="form-text" for="txt-uid">아이디</label>
+                    <input type="text" id="txt-uid" name="" value="아이디벨류" placeholder="아이디를 입력하세요">
+                </div>
+                
+                <!-- 패스워드 -->
+                <div class="form-group">
+                    <label class="form-text" for="txt-upw">패스워드</label>
+                    <input type="text" id="txt-upw" name="" value="패스워드벨류" placeholder="패스워드를 입력하세요">
+                </div>
+
+                <!-- 이름 -->
+                <div class="form-group">
+                    <label class="form-text" for="txt-uname">이름</label>
+                    <input type="text" id="txt-uname" name="" value="이름벨류" placeholder="이름을 입력하세요">
+                </div>
+
+                <!-- 프로필사진 -->
+                <div class="form-group">
+                    <label class="form-text" for="input-profile-img">프로필사진</label>
+                    <input type="file" id="input-profile-img" name="" value="">
+                </div>
+
+                <!-- 주소 -->
+                <div class="form-group">
+                    <label class="form-text" for="txt-post">주소</label>
+                    <input type="text" id="txt-post" name="" value="주소벨류" placeholder="우편번호를 입력하세요">
+                    <button type="button">우편번호찾기</button> <br>
+                    <input type="text" id="txt-addr" name="" value="주소벨류" placeholder="주소를 입력하세요">
+                </div>
+               
+                <!-- 통신사 -->
+                <div class="form-group">
+                    <label class="form-text" for="select-telecom">이동통신사</label>
+                    <select id="select-telecom" name="telecom">
+                        <option value=""  selected="selected">선택해주세요</option>
+                        <option value="sk">SKT</option>
+                        <option value="kt">KTF</option>
+                        <option value="lg">LG</option>
+                        <option value="etc">기타알뜰통신</option>
+                    </select>
+                </div>
+                <!-- //통신사 -->
+                
+                <!-- 나이 -->
+                <div class="form-group">
+                    <span class="form-text">나이</span>
+                    <label for="rdo-age10">10대</label>
+                    <input type="radio" id="rdo-age10" name="age" value="10" checked="checked">
+                    
+                    <label for="rdo-age20">20대</label>
+                    <input type="radio" id="rdo-age20" name="age" value="20">
+                    
+                    <label for="rdo-age30">30대</label>
+                    <input type="radio" id="rdo-age30"name="age" value="30">
+
+                    <label for="rdo-age40">40대</label>
+                    <input type="radio" id="rdo-age40"name="age" value="40">
+
+                    <label for="rdo-age50">기타</label>
+                    <input type="radio" id="rdo-age50"name="age" value="50">
+                </div>
+                <!-- //나이 -->
+
+                <!-- 취미 -->
+                <div class="form-group">
+                    <span class="form-text">취미</span>
+                    <label for="chk-book">독서</label>
+                    <input type="checkbox" id="chk-book" value="book" name="hobby" checked="checked">
+                    
+                    <label for="chk-music">음악</label>
+                    <input type="checkbox" id="chk-music" value="music" name="hobby">
+                    
+                    <label for="chk-trip">여행</label>
+                    <input type="checkbox" id="chk-trip" value="trip" name="hobby">
+            
+                    <label for="chk-movie">영화</label>
+                    <input type="checkbox" id="chk-movie" value="movie" name="hobby">
+                    
+                    <label for="chk-code">코딩</label>
+                    <input type="checkbox" id="chk-code" value="code" name="hobby">
+                    
+                    <label for="chk-etc">기타</label>
+                    <input type="checkbox" id="chk-etc" value="etc" name="hobby">
+                </div>
+                <!-- //취미 -->
+
+                <!-- 자기소개 -->
+                <div class="form-group">
+                    <label class="form-text" id="label-profile" for="textarea-profile">자기소개</label>
+                    <textarea id="textarea-profile" name="notice"></textarea>
+                </div>
+
+                <!-- 버튼영역 -->
+                <div class="button-area">
+                    <button type="submit" id="btn-submit">등 록</button>
+                    <button type="reset" id="btn-reset">초기화</button>
+                </div>
+                
+            </form>        
+        </div>
+        <!--//글쓰기폼 왹곽 선-->
+    </body>
+
+</html>

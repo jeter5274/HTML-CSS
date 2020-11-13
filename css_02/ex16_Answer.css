@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+body{
+	font-family: "맑은 고딕";
+	font-size: 12px;
+}
+
+#join-box{
+	width: 700px;
+  
+	/*border: 1px solid #000000;*/
+}
+
+/* 폼요소그룹(한줄) */
+.form-group{
+	padding: 12px 5px 12px 5px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+/* 왼쪽 글씨영역 */
+.form-group .form-text{
+	display: inline-block;
+	width: 80px;
+	text-align: left;
+	/*border: 1px solid #000000;*/
+}
+
+
+/* 주소창 */
+.form-group #txt-addr {
+	width: 400px;
+	margin: 5px 0px 0px 84px;
+}
+
+/* 나이, 취미 */
+.form-group input[type="checkbox"], 
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* 프로필 */
+.form-group #label-profile {
+	vertical-align: top;
+}
+.form-group #textarea-profile {
+	width: 400px;
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.button-area{
+	border-top: 1px solid #e6e6e6;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+.button-area button {
+	width: 60px;
+	padding: 5px 5px 5px 5px;
+}
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>MySite 게시판 글작성</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/board_write.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <!--헤더-->
+            <div id="header" class="clearfix">
+                <h1><a href="./main.html">MySite</a></h1>
+                <div id="login_area">
+                    <a href="">로그인</a>
+                    <a href="./signup.html">회원가입</a>
+                </div>
+            </div>
+            <!--헤더 끝-->
+
+            <!--네비-->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li><a href="#">입사지원서</a></li>
+                    <li><a href="./board.html">게시판</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">방명록</a></li>
+                </ul>
+            </div>
+            <!--네비 끝-->
+
+            <!--콘텐츠-->
+            <div id="contents" class="clearfix">
+                <!--어사이드-->
+                <div id="aside">
+                    <h2>게시판</h2>
+                    <ul>
+                        <li><a href="./board.html">일반 게시판</a></li>
+                        <li><a href="./board_comment.html">댓글 게시판</a></li>
+                        <li><a href="./board_file.html">첨부 게시판</a></li>
+                    </ul>
+                </div> 
+                <!--어사이드 끝-->
+
+                <!--메인-->
+                <div id="main">
+                    <div id="main_top" class="clearfix">
+                        <h3>게시글 작성</h3>
+                        <div id="main_top_right">
+                            <ul>
+                                <li><a href="./main.html">홈</a></li>
+                                <li><a href="./board.html">게시판 </a></li>
+                                <li class="last_clear"><a href="./board_write.html">게시글 작성 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="main_bottom">
+                        <form action="" method="">
+                            <!--게시판 선택-->
+                            <div>
+                                <label for="board_select" class="subtitle">게시판 선택</label>
+                                <select id="board_select">
+                                    <option>선택해주세요</option>
+                                    <option>일반 게시판</option>
+                                    <option>댓글 게시판</option>
+                                    <option>첨부 게시판</option>
+                                </select>
+                            </div>
+                            <!--게시판 선택 끝-->
+            
+                            <!--제목-->
+                            <div>
+                                <label for="board_title" class="subtitle">제목</label>
+                                <input id="board_title" type="text" placeholder="제목을 입력해 주세요">
+                            </div>
+                            <!--제목 끝-->
+            
+                            <!--비밀번호-->
+                            <div>
+                                <label for="board_pwd" class="subtitle">비밀번호</label>
+                                <input id="board_pwd" type="password" placeholder="패스워드를 입력하세요">
+                            </div>
+                            <!--비밀번호 끝-->
+            
+                            <!--공개범위-->
+                            <div>
+                                <span class="subtitle">공개범위</span>
+                                <label for="radio_myself">본인</label><input id="radio_myself" type="radio">
+                                <label for="radio_loginMember">로그인회원</label><input id="radio_loginMember" type="radio">
+                                <label for="radio_friend">친구</label><input id="radio_friend" type="radio">
+                                <label for="radio_all">전체</label><input id="radio_all" type="radio" checked="checked">
+                            </div>
+                            <!--공개범위 끝-->
+            
+                            <!--허용범위-->
+                            <div>
+                                <span class="subtitle">허용범위</span>
+                                <label for="chk_comment">댓글허용</label><input id="chk_comment" type="checkbox" checked="checked">
+                                <label for="chk_reply">답글허용</label><input id="chk_reply" type="checkbox">
+                                <label for="chk_like">좋아요허용</label><input id="chk_like" type="checkbox">
+                            </div>
+                            <!--허용범위 끝-->
+            
+                            <!--글 작성-->
+                            <div>
+                                <textarea></textarea>
+                            </div>
+                            <!--글 작성 끝-->
+            
+                            <!--첨부파일-->
+                            <div>
+                                <label for="board_file" class="subtitle">첨부파일</label>
+                                <input id="board_file" type="file">
+                            </div>
+                            <!--첨부파일 끝-->
+            
+                            <!--버튼-->
+                            <div id="btn_area">
+                                <button type="reset">초기화</button>
+                                <button type="submit">등 록</button>
+                            </div>
+                            <!--버튼 끝-->
+                        </form>
+                    </div> 
+                </div>
+                <!--메인 끝-->
+            </div>
+            <!--콘텐츠 끝-->
+            <!--회원가입 폼-->
+            <div id="signup_box">
+                
+            </div>
+            <!--회원가입 폼 끝-->
+
+            <!--푸터-->
+            <div id="footer">
+                Coptright(C) 전재철 2020 All Right reserved.
+            </div>
+            <!--푸터 끝-->
+        </div>
+    </body>
+</html>

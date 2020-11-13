@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>첫번째 웹페이지</title>
+        <link rel="stylesheet" href="./board_review.css">
+    </head>
+
+    <body>
+        <div id="board_box">
+            <form action="" method="">
+                <!--게시판 선택-->
+                <div>
+                    <label for="board_select" class="subtitle">게시판 선택</label>
+                    <select id="board_select">
+                        <option>선택해주세요</option>
+                        <option>공지사항</option>
+                        <option>가입인사</option>
+                        <option>출석체크</option>
+                        <option>자유게시판</option>
+                    </select>
+                </div>
+                <!--게시판 선택 끝-->
+
+                <!--제목-->
+                <div>
+                    <label for="board_title" class="subtitle">제목</label>
+                    <input id="board_title" type="text" placeholder="제목을 입력해 주세요">
+                </div>
+                <!--제목 끝-->
+
+                <!--비밀번호-->
+                <div>
+                    <label for="board_pwd" class="subtitle">비밀번호</label>
+                    <input id="board_pwd" type="password" placeholder="패스워드를 입력하세요">
+                </div>
+                <!--비밀번호 끝-->
+
+                <!--공개범위-->
+                <div>
+                    <span class="subtitle">공개범위</span>
+                    <label for="radio_myself">본인</label><input id="radio_myself" type="radio">
+                    <label for="radio_loginMember">로그인회원</label><input id="radio_loginMember" type="radio">
+                    <label for="radio_friend">친구</label><input id="radio_friend" type="radio">
+                    <label for="radio_all">전체</label><input id="radio_all" type="radio" checked="checked">
+                </div>
+                <!--공개범위 끝-->
+
+                <!--허용범위-->
+                <div>
+                    <span class="subtitle">허용범위</span>
+                    <label for="chk_comment">댓글허용</label><input id="chk_comment" type="checkbox" checked="checked">
+                    <label for="chk_reply">답글허용</label><input id="chk_reply" type="checkbox">
+                    <label for="chk_like">좋아요허용</label><input id="chk_like" type="checkbox">
+                </div>
+                <!--허용범위 끝-->
+
+                <!--글 작성-->
+                <div>
+                    <textarea></textarea>
+                </div>
+                <!--글 작성 끝-->
+
+                <!--첨부파일-->
+                <div>
+                    <label for="board_file" class="subtitle">첨부파일</label>
+                    <input id="board_file" type="file">
+                </div>
+                <!--첨부파일 끝-->
+
+                <!--버튼-->
+                <div id="btn_area">
+                    <button type="submit">등 록</button>
+                    <button type="reset">초기화</button>
+                </div>
+                <!--버튼 끝-->
+            </form>
+        </div>
+    </body>
+</html>

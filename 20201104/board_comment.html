@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>MySite - 댓글 게시판</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/board.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <!--헤더-->
+            <div id="header" class="clearfix">
+                <h1><a href="./main.html">MySite</a></h1>
+                <div id="login_area">
+                    <a href="#">로그인</a>
+                    <a href="./signup.html">회원가입</a>
+                </div>
+            </div>
+            <!--헤더 끝-->
+
+            <!--네비-->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li><a href="#">입사지원서</a></li>
+                    <li><a href="./board.html">게시판</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">방명록</a></li>
+                </ul>
+            </div>
+            <!--네비 끝-->
+
+            <!--콘텐츠-->
+            <div id="contents" class="clearfix">
+                <!--어사이드-->
+                <div id="aside">
+                    <h2>게시판</h2>
+                    <ul>
+                        <li><a href="./board.html">일반 게시판</a></li>
+                        <li><a href="./board_comment.html">댓글 게시판</a></li>
+                        <li><a href="./board_file.html">첨부 게시판</a></li>
+                    </ul>
+                </div> 
+                <!--어사이드 끝-->
+
+                <!--메인-->
+                <div id="main">
+                    <div id="main_top" class="clearfix">
+                        <h3>댓글게시판</h3>
+                        <div id="main_top_right">
+                            <ul>
+                                <li><a href="./main.html">홈</a></li>
+                                <li><a href="./board.html">게시판 </a></li>
+                                <li class="last_clear"><a href="./board_comment.html">댓글 게시판</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="main_middle">
+                        <div id="search_area">
+                            <input id="search" type="text">
+                            <button type="button">검색</button>
+                        </div>
+                        
+                        <table id="board_list">
+                            <colgroup>
+                                <col width="7%">
+                                <col width="35%">
+                                <col width="17%">
+                                <col width="17%">
+                                <col width="17%">
+                                <col width="7%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>글쓴이</th>
+                                    <th>조회수</th>
+                                    <th>작성일</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>000</td>
+                                    <td><a href="#">게시판 테스트 입니다.</a></td>
+                                    <td>관리자</td>
+                                    <td>0</td>
+                                    <td>2020-11-04</td>
+                                    <td><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td>000</td>
+                                    <td><a href="#">게시판 테스트 입니다.</a></td>
+                                    <td>관리자</td>
+                                    <td>0</td>
+                                    <td>2020-11-04</td>
+                                    <td><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td>000</td>
+                                    <td><a href="#">게시판 테스트 입니다.</a></td>
+                                    <td>관리자</td>
+                                    <td>0</td>
+                                    <td>2020-11-04</td>
+                                    <td><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td>000</td>
+                                    <td><a href="#">게시판 테스트 입니다.</a></td>
+                                    <td>관리자</td>
+                                    <td>0</td>
+                                    <td>2020-11-04</td>
+                                    <td><a href="#">삭제</a></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>000</td>
+                                    <td><a href="#">게시판 테스트 입니다.</a></td>
+                                    <td>관리자</td>
+                                    <td>0</td>
+                                    <td>2020-11-04</td>
+                                    <td><a href="#">삭제</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="main_bottom" class="clearfix">
+                        <div id="page_list">
+                            <ul>
+                                <li><a href="#">◀</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">▶</a></li>
+                            </ul>
+                        </div>
+                        <button type="button"><a href="./board_write.html">글쓰기</a></button>
+                    </div>
+                    
+                </div>
+                <!--메인 끝-->
+            </div>
+            <!--콘텐츠 끝-->
+
+            <!--푸터-->
+            <div id="footer">
+                Coptright(C) 전재철 2020 All Right reserved.
+            </div>
+            <!--푸터 끝-->
+        </div>
+    </body>
+</html>

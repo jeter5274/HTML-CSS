@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form{
+    margin: 0px; padding: 0px;
+}
+
+body{
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+#signup_box{
+    width: 700px;
+    margin:10px 0px 0px 10px;
+}
+
+body>#signup_box>form>div{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0px 10px 0px; 
+}
+
+body>#signup_box>form>div .subtitle{
+    display: inline-block;
+    width: 80px;
+}
+
+body>#signup_box>form>div>#address{
+    display: inline-block;
+    margin:5px 0px 0px 84px;
+}
+
+body>#signup_box>form>div>#address>input{
+    width: 400px;
+}
+
+body>#signup_box>form>div>input[type=radio], body>#signup_box>form>div>input[type=checkbox]{
+    margin: 0px 10px 0px 5px
+}
+
+body>#signup_box>form>div>.intro_myself{
+    vertical-align: top;
+}
+
+body>#signup_box>form>div>textarea{
+    width: 400px;
+    height: 100px;
+}
+
+body>#signup_box>form>#btn_area{
+    text-align: center;
+    border-bottom: none;
+}
+
+body>#signup_box>form>#btn_area>button{
+    width: 60px;
+    height: 30px;
+}

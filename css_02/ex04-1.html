@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>게시판 리스트 만들기 2</title>
+        <style>
+            #board_list{
+                width : 900px;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            #board_list>thead tr{
+                background-color: #dddddd;
+                border-top: 2px solid #797979;
+                border-bottom: 2px solid #797979;
+            }
+
+            #board_list>tbody tr{border-bottom: 1px dotted #797979;}
+
+            #board_list>tbody tr:hover{background-color: #ffff00;}
+
+            #board_list .bottomLine{border-bottom: 2px solid #797979;}
+
+            #board_list .textdeco{
+                color: #0000ff;
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>mysite</h1>
+        <h2>게시판</h2>
+        <h3>일반게시판</h3>
+        <h4>리스트</h4>
+
+        <table id="board_list">
+            
+            <colgroup>
+                <col style="width : 6%;">
+                <col style="width : 50%;">
+                <col style="width : 11%;">
+                <col style="width : 11%;">
+                <col style="width : 11%;">
+                <col style="width : 11%;">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td class="textdeco">게시판 게시글 입니다.</td>
+                    <td>익명</td>
+                    <td>12130</td>
+                    <td>2020-10-29</td>
+                    <td>신고</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="textdeco">게시판 게시글 입니다.</td>
+                    <td>익명</td>
+                    <td>12130</td>
+                    <td>2020-10-29</td>
+                    <td>신고</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="textdeco">게시판 게시글 입니다.</td>
+                    <td>익명</td>
+                    <td>12130</td>
+                    <td>2020-10-29</td>
+                    <td>신고</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="textdeco">게시판 게시글 입니다.</td>
+                    <td>익명</td>
+                    <td>12130</td>
+                    <td>2020-10-29</td>
+                    <td>신고</td>
+                </tr>
+
+                <tr class="bottomLine">
+                    <td>123</td>
+                    <td class="textdeco">게시판 게시글 입니다.</td>
+                    <td>익명</td>
+                    <td>12130</td>
+                    <td>2020-10-29</td>
+                    <td>신고</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>

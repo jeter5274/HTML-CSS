@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* ********** contents - 레이아웃 ********** */
+
+#contents>#aside{
+    width: 180px;
+    float: left;
+}
+
+#contents>#main{
+    width: 700px;
+    margin: 0px 0px 0px 20px;
+    float: left;
+}
+
+/* ********** contents - aside ********** */
+
+#contents>#aside>h2{
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    background-color: #ddd;
+    font-size: 20px;
+}
+
+#contents>#aside li{
+    border: 1px solid #b2b2b2;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 0px 0px 0px;
+
+}
+
+/* ********** contents - main ********** */
+
+/* top */
+
+#contents>#main>#main_top{
+    margin: 20px 0px 20px 0px;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+#contents>#main>#main_top>h3{
+    float: left;
+    font-size: 20px;
+    padding: 0px 0px 5px 0px;
+}
+
+#contents>#main>#main_top>#main_top_right{
+    float: right;
+}
+
+#contents>#main>#main_top>#main_top_right li{
+    float: left;
+    font-size: 12px;
+    margin: 10px 5px 0px 0px;
+}
+
+#contents>#main>#main_top>#main_top_right li:after{
+    content: " >";
+}
+
+#contents>#main>#main_top>#main_top_right li.last_clear:after{
+    content: none;
+}
+
+/* bottom */
+
+#contents>#main>#main_bottom>form>div{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0px 10px 0px; 
+}
+
+#contents>#main>#main_bottom>form>div .subtitle{
+    display: inline-block;
+    width: 80px;
+}
+
+#contents>#main>#main_bottom>form>div>#address{
+    display: inline-block;
+    margin:5px 0px 0px 84px;
+}
+
+#contents>#main>#main_bottom>form>div>#address>input{
+    width: 400px;
+}
+
+#contents>#main>#main_bottom>form>div>input[type=radio], #contents>#main>#main_bottom>form>div>input[type=checkbox]{
+    margin: 0px 10px 0px 5px
+}
+
+#contents>#main>#main_bottom>form>div>.intro_myself{
+    vertical-align: top;
+}
+
+#contents>#main>#main_bottom>form>div>textarea{
+    width: 400px;
+    height: 100px;
+}
+
+#contents>#main>#main_bottom>form>#btn_area{
+    text-align: right;
+    border-bottom: none;
+}
+
+#contents>#main>#main_bottom>form>#btn_area>button{
+    width: 60px;
+    height: 30px;
+}

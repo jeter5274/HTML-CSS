@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!--한국어문서만 검색, 음성지원 할 때-->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해설할 때 필요한 정보 -->
+        <title>html5</title>
+    </head>
+
+    <body>
+        <p>목차</p>
+        <ol>
+            <li><a href=".\ex01.html">h1~h6 태그</a></li>
+            <li><a href=".\ex02.html">p br hr strong em</a></li>
+            <li><a href=".\ex03.html">ol, ul 리스트</a></li>
+            <li><a href=".\ex04.html">img a 태그</a></li>
+            <li><a href=".\ex05.html">table tr td 태그</a></li>
+            <li><a href=".\ex06.html">테이블 가로세로 합치기 연습문제</a></li>
+            <li><a href=".\ex07.html">table 2(thead, tbody, tfoot)</a></li>
+            <li><a href=".\ex08.html">table 연습문제</a></li>
+            <li><a href=".\ex09.html">div span 태그</a></li>
+            <li><a href=".\ex10.html">form 태그</a></li>
+            
+        </ol>
+        
+        <hr>
+
+        <h1>html5</h1>
+        <h2>10. form 태그</h2>
+        
+        <form action="" method="">
+
+            <label for="uid">아이디 : </label><input type="text" id="uid" placeholder="아이디 입력하세용">
+            <button type="button">중복체크</button><br>
+            <label for="ipassword">비밀번호 : </label><input type="password" id="ipassword"><br>
+            <input type="hidden"><br>
+            <input type="file"><br>
+            <input type="date"><br>
+            <input type="color"><br>
+
+            <!-- button 태그로 사용할 것-->
+            <input type="button" value="등록"><br>
+
+            <!-- 일반 버튼 -->
+            <button type="button">우편번호 찾기</button><br><br><br>
+
+            <!-- checkbox study -->
+            <label for="book">독서</label> <input type="checkbox" id="book" checked="checked">
+            <label for="music">음악</label> <input type="checkbox" id="music">
+            <label for="trip">여행</label> <input type="checkbox" id="trip">
+
+            <br>
+
+            <label for="dog">개</label> <input type="checkbox" id="dog">
+            <label for="cat">고양이</label> <input type="checkbox" id="cat">
+            <label for="bird">새</label> <input type="checkbox" id="bird">
+            
+            <br><br>
+
+            <!-- radio study -->
+            <label for="apple">사과</label> <input type="radio" id="apple" name="fruit">
+            <label for="grape">포도</label> <input type="radio" id="grape" name="fruit">
+            <label for="orange">오렌지</label> <input type="radio" id="orange" name="fruit">
+
+            <br>
+
+            <label for="jan">1월</label> <input type="radio" id="jan" name="month">
+            <label for="fab">2월</label> <input type="radio" id="fab" name="month">
+            <label for="mar">3월</label> <input type="radio" id="mar" name="month">
+
+            <br><br>
+
+            <!-- select study -->
+            <select>
+                <option>선택하오</option>
+                <option>SKT</option>
+                <option selected="selected">KT</option>
+                <option>LG</option>
+                <option>알뜰통신</option>
+            </select>
+
+            <br>
+
+            <textarea placeholder="자유롭게 기입하세요"></textarea>
+
+            <br><br>
+
+            <!-- form에서 데이터 전송 버튼-->
+            <button type="submit">등록</button><br>
+            <button type="reset">초기화</button><br>
+
+           
+        </form>
+
+    </body>
+</html>
